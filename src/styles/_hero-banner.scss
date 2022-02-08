@@ -1,0 +1,64 @@
+@use './styles/mixins';
+
+.hero-banner {
+  @include mixins.u-wrapper;
+
+  &-wrapper {
+    background-color: var(--secondary-color-dark);
+  }
+
+  display: flex;
+  flex-direction: row;
+  padding: 0.8rem 3.2rem;
+
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 425px) {
+    padding: 2.4rem;
+    flex-direction: column-reverse;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.hero-text {
+  &__title {
+    color: var(--header-invert-color);
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 4.1rem;
+    margin: 3.2rem 0 3.2rem;
+
+    @media screen and (max-width: 425px) {
+      margin: 2.4rem 0 2.4rem;
+      text-align: center;
+    }
+  }
+
+  &__description {
+    color: var(--text-invert-color);
+    font-size: 1.6rem;
+    margin: 0 0 6.4rem;
+
+    @media screen and (max-width: 425px) {
+      margin: 0 0 2.4rem;
+    }
+  }
+
+  &__date {
+    color: var(--primary-color);
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 3.2rem;
+    margin: 0 0 2.4rem;
+    @media screen and (max-width: 425px) {
+        margin: 0;
+      text-align: center;
+    }
+  }
+}
