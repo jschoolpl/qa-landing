@@ -34,6 +34,10 @@
   font-size: 1.6rem;
   border-bottom: 1px solid var(--header-color);
 
+  &--full {
+    justify-content: space-between;
+  }
+
   @media screen and (max-width: 425px) {
     flex-direction: column;
     margin: 0 2.4rem;
