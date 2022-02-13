@@ -1,3 +1,6 @@
+.dccache
+src/
+
 # Logs
 logs
 *.log
