@@ -1,0 +1,31 @@
+@use "./styles/mixins";
+
+.questions-wrapper {
+  @include mixins.u-wrapper;
+
+  font-size: 1.6rem;
+  padding: 3.2rem;
+
+  @media screen and (max-width: 425px) {
+    padding: 2.4rem;
+  }
+}
+.questions-list {
+  list-style: none;
+  padding: 0;
+
+  &__title {
+    border-bottom: 1px solid var(--bg-color-dark);
+    margin: 0;
+    padding: 0.8rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+}
