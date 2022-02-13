@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "parcel src/index.html --open --port 8080",
     "build": "parcel build src/index.html --no-source-maps --out-dir dist",
-    "predeploy": "rm -rf dist && npm run build -- --public-url https://jschoolpl.github.io/qa-landing/",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "rm -rf dist && npm run build -- --public-url https://jschoolpl.github.io/qa-landing/"
   },
   "author": "",
   "license": "MIT",
