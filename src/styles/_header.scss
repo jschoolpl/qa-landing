@@ -3,17 +3,10 @@
   height: 4.6rem;
   padding: 0 3.2rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
-  justify-content: end;
-}
 
-.link {
-  &:last-child {
-    margin-left: 3.2rem;
-  }
-
-  &__text {
+  &__link {
     color: var(--text-color);
     text-decoration: none;
   }
